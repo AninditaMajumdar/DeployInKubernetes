@@ -9,7 +9,7 @@ steps:
   image: plugins/docker
   secrets: [ docker_username, docker_password ]
   repo: dodev123/drone
-  tags: ${DRONE_BUILD_NUMBER}
+  tags: latest
 - name: kubectl
   image: komljen/drone-kubectl-helm
   secrets: [ kubernetes_server, kubernetes_cert, kubernetes_token ]
