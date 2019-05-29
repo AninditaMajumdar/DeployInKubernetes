@@ -19,3 +19,4 @@ steps:
   image: komljen/drone-kubectl-helm
   secrets: [ kubernetes_server, kubernetes_cert, kubernetes_token ]
   kubectl: "get pods"
+  
