@@ -8,7 +8,7 @@ steps:
 - name: docker
   image: plugins/docker
   secrets: [ docker_username, docker_password ]
-  repo: komljen/test-image
+  repo: dodev123/drone
   tags: ${DRONE_COMMIT_SHA}
 - name: kubectl
   image: komljen/drone-kubectl-helm
