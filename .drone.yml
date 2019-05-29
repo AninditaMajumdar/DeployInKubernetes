@@ -1,0 +1,12 @@
+kind: pipeline
+name: default
+steps:
+- name: deploy
+  image: dodev123/drone
+  kubernetes_server: __http://52.77.224.251
+  kubernetes_token: 63d52m.cmv32wc9bd5m25ax
+  namespace: default
+  deployment: nginx-deployment
+  repo: nginx:1.7.9
+  container: my-container
+  tag: latest 
