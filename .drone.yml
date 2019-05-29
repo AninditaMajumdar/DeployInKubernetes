@@ -16,7 +16,7 @@ steps:
     repo: dodev123/try
     tags: latest
 - name: kubectl
-  image: komljen/drone-kubectl-helm
+  image: quay.io/honestbee/drone-kubernetes
   secrets: [ kubernetes_server, kubernetes_cert, kubernetes_token ]
   commands:
   - kubectl get pods
