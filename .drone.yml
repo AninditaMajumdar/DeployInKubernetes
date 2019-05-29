@@ -20,3 +20,4 @@ steps:
   secrets: [ kubernetes_server, kubernetes_cert, kubernetes_token ]
   commands:
   - kubectl get pods
+  
