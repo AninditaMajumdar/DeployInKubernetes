@@ -3,7 +3,8 @@ name: default
 steps:
 - name: build
   image: gradle:4.5.1-jdk9
-  commands: gradle --help
+  commands: 
+  - gradle --help
 - name: docker
   image: plugins/docker
   secrets: [ docker_username, docker_password ]
